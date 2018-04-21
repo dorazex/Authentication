@@ -21,12 +21,15 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // set up remote config
         final FirebaseRemoteConfig mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
         FirebaseRemoteConfigSettings configSettings = new FirebaseRemoteConfigSettings.Builder()
                 .setDeveloperModeEnabled(BuildConfig.DEBUG)
                 .build();
         mFirebaseRemoteConfig.setConfigSettings(configSettings);
+        // set up defaults for remote parameters
         mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_defaults);
+        // fetch parameters from firebase
         mFirebaseRemoteConfig.fetch(5)
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
@@ -46,17 +49,20 @@ public class HomeActivity extends Activity {
                 });
 
 
-
         Button emailButton = (Button) findViewById(R.id.ChooseEmailSignInButton);
         Button googleButton = (Button) findViewById(R.id.ChooseGoogleSignInButton);
         Button facebookButton = (Button) findViewById(R.id.ChooseFacebookSignInButton);
         Button anonymousButton = (Button) findViewById(R.id.ChooseAnonymousSignInButton);
+
+        // Enable/Disable anonymous user "sign in" based on remote config
         Boolean allow_anonymous_user = mFirebaseRemoteConfig.getBoolean("allow_anonymous_user");
         if (allow_anonymous_user){
             anonymousButton.setVisibility(View.VISIBLE);
         }else{
             anonymousButton.setVisibility(View.GONE);
         }
+
+        // Set appropriate listeners for each button of different login method
 
         emailButton.setOnClickListener(new View.OnClickListener(){
             @Override
