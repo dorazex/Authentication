@@ -10,6 +10,6 @@ public class AnonymousHomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anonymous_home);
-        ((TextView) findViewById(R.id.AnonymousHomeEditText)).setText("He's a real nowhere man\nSitting in his nowhere land\nMaking all his nowhere plans\nFor nobody");
+        ((TextView) findViewById(R.id.AnonymousHomeEditText)).setText(R.string.anonymous_user_home_text);
     }
 }
