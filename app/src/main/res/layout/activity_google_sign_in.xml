@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.authentication.GoogleSignInActivity">
+
+    <TextView
+        android:id="@+id/GoogleStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/GoogleDetailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail" />
+
+    <LinearLayout
+        android:id="@+id/google_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/GoogleSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google Sign In" />
+
+        <Button
+            android:id="@+id/GoogleSignOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google Sign Out" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
