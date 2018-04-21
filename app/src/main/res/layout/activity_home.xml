@@ -13,35 +13,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Choose a Sign In Method" />
+        android:text="@string/choose_method_title" />
 
     <Button
         android:id="@+id/ChooseEmailSignInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Email Sign In" />
+        android:text="@string/email_sign_in_button_text" />
 
     <Button
         android:id="@+id/ChooseGoogleSignInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Google Sign In" />
+        android:text="@string/google_sign_in_button_text" />
 
     <Button
         android:id="@+id/ChooseFacebookSignInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Facebook Sign In" />
+        android:text="@string/facebook_sign_in_button_text" />
 
     <Button
         android:id="@+id/ChooseAnonymousSignInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Anonymous Sign In" />
+        android:text="@string/anonymous_sign_in_button_text" />
 
 
 

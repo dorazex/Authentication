@@ -12,13 +12,13 @@
         android:id="@+id/GoogleStatusTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Status" />
+        android:text="@string/status_default" />
 
     <TextView
         android:id="@+id/GoogleDetailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Detail" />
+        android:text="@string/detail_default" />
 
     <LinearLayout
         android:id="@+id/google_buttons"
@@ -31,14 +31,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Google Sign In" />
+            android:text="@string/sign_in_button_text" />
 
         <Button
             android:id="@+id/GoogleSignOutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Google Sign Out" />
+            android:text="@string/sign_out_button_text" />
 
     </LinearLayout>
 
