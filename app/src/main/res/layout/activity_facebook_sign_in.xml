@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.authentication.GoogleSignInActivity">
+    tools:context="com.example.authentication.FacebookSignInActivity">
 
     <TextView
-        android:id="@+id/GoogleStatusTextView"
+        android:id="@+id/FacebookStatusTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Status" />
 
     <TextView
-        android:id="@+id/GoogleDetailTextView"
+        android:id="@+id/FacebookDetailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Detail" />
 
     <LinearLayout
-        android:id="@+id/google_buttons"
+        android:id="@+id/facebook_buttons"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/GoogleSignInButton"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/FacebookSignInButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Google Sign In" />
+            android:layout_centerInParent="true" />
 
         <Button
-            android:id="@+id/GoogleSignOutButton"
+            android:id="@+id/FacebookSignOutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Google Sign Out" />
+            android:text="Facebook Sign Out" />
 
     </LinearLayout>
 
