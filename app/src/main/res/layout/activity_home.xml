@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.authentication.HomeActivity">
+
+    <TextView
+        android:id="@+id/ChooseSignInTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Choose a Sign In Method" />
+
+    <Button
+        android:id="@+id/ChooseEmailSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Email Sign In" />
+
+    <Button
+        android:id="@+id/ChooseGoogleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Google Sign In" />
+
+    <Button
+        android:id="@+id/ChooseFacebookSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Facebook Sign In" />
+
+    <Button
+        android:id="@+id/ChooseAnonymousSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Anonymous Sign In" />
+
+
+
+</LinearLayout>
